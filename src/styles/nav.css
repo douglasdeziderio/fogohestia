@@ -1,0 +1,70 @@
+@import url(/src/styles/vars.css);
+
+header{
+    display: flex;
+    flex-direction: row;
+    background-color: var(--cor-pri);
+    justify-content: space-between;
+}
+
+#menu{
+    border: transparent;
+    background-color: transparent;
+    font-size: 3em;
+}
+
+.menu-menu{
+    position: absolute;
+    top: 7.8%;
+    right: 0%;
+    background-color: var(--cor-pri);
+    padding: 3em 3em;
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 3em;
+    border-radius: 0 0 0 50px;
+}
+
+.li-pri, .li-sec, .li-ter{
+    font-family: var(--font-prim);
+}
+
+.hidden{
+    display: none;
+}
+
+@media screen and (min-width: 1280px){
+    header{
+        position: fixed;
+        width: 100vw;
+        height: 7%;
+    }
+
+    #menu{
+        display: none;
+    }
+
+    .hidden{
+        display: inline;
+    }
+
+    .menu-menu{
+        top: 23%;
+        padding: 0 25px;
+        display: flex;
+        flex-direction: row;
+        gap: 1em;
+    }
+
+    .li-pri, .li-sec, .li-ter{
+        padding: 10px;
+        border-radius: 100px;
+        transition: 0.3s;
+    }
+
+    .li-pri:hover, .li-sec:hover, .li-ter:hover{
+        cursor: pointer;
+        background-color: var(--cor-ter);
+    }
+}

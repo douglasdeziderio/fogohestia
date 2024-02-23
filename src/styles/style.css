@@ -1,0 +1,124 @@
+@import url(/src/styles/vars.css);
+
+main{
+    background: rgb(23,107,135);
+    background: linear-gradient(180deg, rgba(23,107,135,1) 30%, rgba(134,182,246,1) 70%, rgba(180,212,255,1) 100%);;
+}
+
+.primaria{
+    padding: 3em 0;
+}
+
+.primaria-primaria{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.div-titulo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+}
+
+h1{
+    font-family: var(--font-grega);
+    font-size: 5em;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+h2{
+    padding: 0 0.3em;
+    font-family: var(--font-prim);
+    font-size: 2em;
+    text-align: justify;
+}
+
+h3{
+    padding: 0 0.3em;
+    font-family: var(--font-prim);
+    font-size: 2em;
+    text-align: justify;
+    color: var(--cor-pri);
+}
+
+.swiper {
+    width: 600px;
+    height: 300px;
+}
+
+.primaria-primaria-bt{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+.primaria-bt{
+    padding: 1em;
+    background-color: var(--cor-ter);
+    font-family: var(--font-prim);
+    color: black;
+    border: 5px solid black;
+    border-radius: 30px;
+    text-decoration: none;
+    display: flex;
+    gap: 1em;
+}
+
+.div-img{
+    text-align: center;
+}
+
+.primaria-img{
+    width: 22em;
+    border: 5px solid black;
+    border-radius: 3em;
+}
+
+
+@media screen and (min-width: 1280px) {
+    .primaria{
+        padding-top: 110px;
+    }
+
+    .primaria-primaria{
+        margin: 0 5em;
+        padding: 5em;
+        background-color: white;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        border-radius: 50px;
+        gap: 100px;
+    }
+
+    .div-titulo{
+        display: flex;
+        justify-content: space-between;
+        gap: 50px;
+    }
+
+    .primaria-primaria-bt{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .primaria-bt{
+        display: flex;
+        align-items: center;
+        transition: 0.3s;
+    }
+
+    .primaria-bt:hover{
+        background-color: var(--cor-sec);
+        transform: translateY(-5px);
+    }
+
+    .primaria-img{
+        width: 32em;
+    }
+}
